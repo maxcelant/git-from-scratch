@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+
 import os
 
-def run():
+def run(args):
   print('init')
+
