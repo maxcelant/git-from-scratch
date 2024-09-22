@@ -17,7 +17,7 @@ def main():
   try:
     cmd, args = sys.argv[1], sys.argv[2:] if len(sys.argv) > 2 else []
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    path_to_command = os.path.join(script_dir, "commands", f"{cmd}.py")
+    path_to_command = os.path.join(script_dir, "bin", f"{cmd}.py")
     if not os.path.exists(path_to_command):
       raise InvalidCommandException(cmd)
     subprocess.run([path_to_command, *args])
