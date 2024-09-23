@@ -47,8 +47,7 @@ def add(file_path):
     print(e)
 
 def add_files():
-  args = sys.argv[1:]
-  for arg in args:
+  for arg in sys.argv[1:]:
     add(arg)
 
 if __name__ == '__main__':
