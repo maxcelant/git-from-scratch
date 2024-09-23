@@ -5,10 +5,10 @@ import subprocess
 USAGE = 'Usage: pygit <command> [<args>]'
 
 class InvalidCommandException(Exception):
-    def __init__(self, command):
-        self.command = command
-        self.message = f"'{self.command}' is not a valid command."
-        super().__init__(self.message)
+  def __init__(self, command):
+    self.command = command
+    self.message = f"'{self.command}' is not a valid command."
+    super().__init__(self.message)
 
 def usage():
   print(USAGE)
