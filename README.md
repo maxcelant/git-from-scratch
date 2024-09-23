@@ -8,12 +8,12 @@ Our version of Git is named **_pygit_**.
 Initializes pygit to this repo.
 
 ```bash
-python3 main.py init
+python3 pygit.py init
 ```
 
 ### Add
 Add files to the staging area.
 
 ```bash
-python3 main.py add [files...]
+python3 pygit.py add [files...]
 ```
